@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iBlog - Heaven for bloggers</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile2.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="left" id="nav-left">
+            <i class="fa fa-bars" id="ham-icon" onclick="sideMenu()"></i>
+            <img src="images/icon.png" alt="" /><span>iBlog</span>
+            <ul>
+                <li id="li1"><a href="/index.html">Home</a></li>
+                <li id="li2"><a href="/about.html">About</a></li>
+                <li id="li3"><a href="/services.html">Services</a></li>
+                <li id="li4"><a class="current" href="/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <form action="search.html">
+            <button><img src="images/search.svg" alt="" /></button>
+            <input type="search" name="query" id="search" placeholder="Article Search" />
+            </form>
+        </div>
+        <div class="signInBox">
+            <button class="sign-in" id="sign-in" onclick="signInOpen()">Sign In</button>
+        </div>
+    </nav>
+    <section class="side-Menu" id="side-Menu" style='animation-name: sideMenuSlideClose;'>
+        <nav class="naviation">
+            <div  id="nav-sideMenu-left">
+                <ul>
+                    <li id="li1"><a href="/index.html">Home</a></li>
+                    <li id="li2"><a href="/about.html">About</a></li>
+                    <li id="li3"><a href="/services.html">Services</a></li>
+                    <li id="li4"><a  class="current" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="signInBox sign-in-side-menu">
+                <button class="sign-in" id="sign-in" onclick="signInOpen()">Sign In</button>
+            </div>
+        </nav>
+    </section>
+    <section class="content-form">
+        <h1>Contact Us</h1>
+        <form class="contact-form" action="">
+            
+            <div><input type="text" name="name" id="name" class="mainInp" placeholder="Enter Your Name"></div>
+            <div><input type="email" name="email" id="email" class="mainInp" placeholder="Enter Your Email"></div>
+            <div><input type="number" name="phone" id="phone" class="mainInp" placeholder="Enter Your Phone No."></div>
+            <div><textarea name="reason" id="reason" cols="30" rows="10" placeholder="Why you want to contact?"></textarea></div>
+            <div><textarea name="remarks" id="remarks" cols="30" rows="10" placeholder="Remarks"></textarea></div>
+            <div>
+                <input type="submit" class="actionButtons" value="Submit">
+                <input type="reset" class="actionButtons" value="Reset">
+            </div>
+        </form>
+    </section>
+    <section class="sign-in-section" id="sign-in-section" style="display: none;">
+        <img src="images/close.png" id="sign-in-close" alt="" onclick="signInClose()">
+        <form id="sign-in-form" action="">
+            <div><img id="sign-up-with-google" src="images/googleSignUp.png" alt="">
+            <img id="log-in-with-google" src="images/googleLogin.png" alt=""></div>
+            <label for="password"><i class="fa fa-key"></i></label>
+            <i class="fa fa-eye" id="pass-display-icon" onclick="passwordDisplay()"></i>
+            <label for="email"><i class="fa fa-user-o"></i></label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            <input type="submit" value="Sign In">
+        </form>
+    </section>
+    <footer>
+        Copyright &copy; 2022-2023 www.iBlog.com | All Rights Reserved | &nbsp;
+        <a href="https://www.vecteezy.com/" target="_blank">
+            Graphic Credits:Vecteezy</a>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/b1c73a7419.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>

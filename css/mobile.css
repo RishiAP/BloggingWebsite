@@ -1,0 +1,106 @@
+@media screen and (max-width:1600px){
+    .signInBox{
+        right: 3vw;
+    }
+}
+@media screen and (max-width:1000px){
+    .sign-in-section{
+        left: 15vw;
+        width: 70vw;
+    }
+}
+@media screen and (max-width:500px){
+    .sign-in-section{
+        left: 5vw;
+        width: 90vw;
+    }
+}
+@media screen and (max-width:500px){
+    .fa-eye{
+        right: 3%;
+    }
+    .fa-user-o{
+        left: 3%;
+    }
+    .fa-key{
+        left: 3%;
+    }
+}
+@media screen and (max-width:1300px){
+    .navigation ul{
+        display: none;
+    }
+    .right{
+        right:1.5vw ;
+    }
+    #search{
+        right: 2vw;
+    }
+    .home-article{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .home-article img{
+        min-width: 190px;
+    }
+    .signInBox{
+        right: 35vw;
+    }
+}
+/* @media screen and (max-width:600px){
+    .signInBox{
+        right: 40vw;
+    }
+} */
+@media screen and (max-width:750px){
+    .signInBox{
+        display: none;
+    }
+    .sign-in-side-menu{
+        display: block;
+    }
+}
+@media screen and (min-width:500px) and (max-width:700px) {
+    .home-article img{
+        width: 30vw;
+    }
+}
+@media screen and (max-width:750px) {
+    #search{
+        min-width: 160px;
+    }
+}
+@media screen and (max-width:360px) {
+    #search{
+        min-width: 115px;
+    }
+    #pass-display-icon{
+        right: 2%;
+    }
+    .fa-key{
+        left: 2%;
+    }
+    .fa-user-o{
+        left: 2%;
+    }
+}
+@media screen and (max-width:400px){
+    .content-right{
+        display: none;
+    }
+    .content{
+        height: 20vh;
+    }
+    hr{
+        position: relative;
+        top: 5vh;
+    }
+    .box-heading-year{
+        position: relative;
+        top: 3vh;
+    }
+    .Article-Main-Box{
+        position: relative;
+        top: 3vh;
+    }
+}

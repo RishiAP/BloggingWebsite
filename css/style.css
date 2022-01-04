@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@300&family=Bree+Serif&family=Lacquer&family=Roboto:wght@400&family=Ubuntu:wght@500&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@200&family=Quicksand:wght@600&family=Raleway:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navigation{
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+    padding: 10px;
+    font-size: 2.2vh;
+    font-family: 'Roboto';
+    z-index: 1;
+}
+ul{
+    display: flex;
+    
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color:rgb(255, 110, 255);
+    transition:all 0.3s ease-in-out;
+}
+ul li a:hover{
+    color: white;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    top: 2.1%;
+    position: fixed;
+    width: 25%;
+    height: 5%;
+}
+#search{
+    border: none;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 2rem;
+    padding: 10px;
+    right: 10%;
+    padding-left: 15px;
+    padding-right: 45px;
+    position: fixed;
+    width: 25%;
+    /* height: 5%; */
+    min-width: 155px;
+    max-width: 350px;
+    top: 2.1vh;
+    font-size: 85%;
+    font-family: 'Roboto';
+}
+#search:focus{
+    border:2px solid greenyellow;
+}
+#search::-webkit-search-cancel-button{
+    cursor: pointer;
+}
+#search::placeholder{
+    color:olive;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    max-width: 80vw;
+    margin: auto;
+    height: 35vh;
+    /* background-color: aquamarine; */
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background: url(../images/m_25.jpg)no-repeat center center;
+    background-size: cover;
+    width:90vw;
+    height: 32vh;
+    z-index: -2;
+    opacity: 0.25;
+    /* width: 80vw; */
+}
+.content-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -1vh;
+    min-height: 95vh;
+    /* background-color: aquamarine; */
+}
+.content-form::before{
+    content: "";
+    position: absolute;
+    background: url(../images/m_25.jpg)no-repeat center center;
+    background-size: cover;
+    width:100vw;
+    height: 92vh;
+    z-index: -2;
+    opacity: 0.25;
+    /* width: 80vw; */
+}
+footer{
+    height: 6vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    padding: 10px;
+    font-size: 2vh;
+    font-family: 'Roboto';
+    color: white;
+}
+footer a{
+    margin-left: 1vw;
+    margin-right: 5vw;
+    color: rgb(0 255 243);
+    text-decoration: none;
+}
+h1{
+    font-size: 4vh;
+    font-family: 'Raleway';
+}
+.mainInp{
+    width: 55vw;
+    max-width:450px ;
+    height: 4vh;
+    margin: 1vh;
+    padding: .75;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 2vh;
+    border: none;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 5rem;
+    font-family:;
+    background: none;
+}
+.mainInp::placeholder{
+    color: black;
+}
+textarea{
+    width: 50vw;
+    max-width:450px ;
+    height: 10vh;
+    margin: 1vh;
+    padding: .75;
+    padding: 1rem;
+    font-size: 2.2vh;
+    border: none;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 1rem;
+    text-align: center;
+    background: none;
+}
+textarea::placeholder{
+    color: black;
+}
+.mainInp:focus,textarea:focus{
+    border: 2px solid rgb(0, 211, 0);
+}
+.home-articles{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 11vh; 
+    bottom: 2vh;
+    min-height: 15vh;
+    max-height: 70vh;
+    margin-bottom: 30px;
+    /* background-color: black; */
+    width: 75vw;
+    /* overflow-y: scroll; */
+}
+.home-article{
+    position: relative;
+    /* top: 5vh; */
+    display: flex;
+    min-height: 5vh;
+    width: 70vw;
+    margin: 10px auto;
+    margin-bottom: 5px;
+    background-color: rgb(255, 209, 148,0.5);
+    border-radius: 2vh;
+}
+.Article-Main-Box{
+    overflow-y: scroll;
+    margin-bottom: 12vh;
+}
+.Article-Main-Box::-webkit-scrollbar{
+    display: ;
+}
+.Article-Main-Box{
+    scrollbar-width: thin;
+}
+.Article-Main-Box img{
+    width: 28vw;
+    border: 2px solid black;
+    border-radius: 2vh;
+    max-width: 350px;
+}
+.home-article-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2.2vh;
+    font-family: 'Nunito';
+}
+.readMain{
+    margin-top: 1vh;
+    font-size: 2.1vh;
+    font-family: 'Quicksand';
+}
+.date-details{
+    font-size: 1.8vh;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+.article-date-time{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3vw;
+}
+.home-article-content a{
+    text-decoration: none;
+    color: rgb(204, 0, 255);
+}
+.home-article-content a:hover{
+    color:  blue;
+}
+.signInBox{
+    position: absolute;
+    right: 3.8vw;
+}
+.signInBox button{
+    background: none;
+    background-color: red;
+    color: white;
+    height: 4vh;
+    width: 6vw;
+    min-width: 90px;
+    font-size: 2vh;
+    border: none;
+    outline: none;
+    border: 2px solid greenyellow;
+    cursor: pointer;
+    border-radius: 1vh;
+}
+.signInBox button:hover{
+    background-color: gray;
+    /* color: black; */
+}
+.sign-in-side-menu{
+    position: absolute;
+    margin-top: 2vh;
+    left: 7vw;
+    display: none;
+}
+.sign-in-section{
+    position: fixed;
+    height: 50vh;
+    width: 50vw;
+    left: 25vw;
+    top: 25vh;
+    /* flex-direction: column; */
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 2rem gray, -1rem -1rem 2rem gray;
+    z-index: 2;
+    border-radius: 5vh;
+    /* align-items: center; */
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 900px;
+}
+.sign-in-section #sign-in-close{
+    width: auto;
+    height: 3vh;
+    position: absolute;
+    right: 2.5vw;
+    top: 2.5vh;
+    z-index: 3;
+    cursor: pointer;
+}
+.sign-in-section div img{
+    width: 40%;
+    max-width: 300px;
+    position: relative;
+    top: 7vh;
+}
+.sign-in-section div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#sign-in-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+}
+#sign-in-form input{
+    position:relative;
+    top: 13vh;
+    width: 70%;
+    margin: 2vh;
+    height: 3vh;
+    padding: 1.5vh;
+    outline: none;
+    border: none;
+    font-family: 'Nunito';
+    font-size: 2.2vh;
+    font-weight: bold;
+    border: 2px solid red;
+    border-radius: 2vh;
+    text-align: center;
+}
+#sign-in-form input:focus{
+    border:2px solid rgb(0, 207, 0);
+}
+#sign-in-form input[type="submit"]{
+    width: 20%;
+    height: 5vh;
+    font-size: 2.5vh;
+    top: 9vh;
+    font-family: 'Nunito';
+    font-weight: bold;
+    border: 2px solid black;
+    margin-top: 5vh;
+    padding: 0;
+    color: white;
+    background-color: orange;
+}
+#sign-in-form input[type="submit"]:hover{
+    background-color: rgb(0, 255, 0);
+    color: black;
+}

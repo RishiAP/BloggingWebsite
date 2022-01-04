@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@200&family=Quicksand:wght@600&family=Raleway:wght@300&display=swap');
+h1{
+    font-size: 3.7vh;
+    margin-top: 3vh;
+    margin: 2vw;
+    font-weight:normal;
+}
+body::-webkit-scrollbar{
+    /* display: none; */
+}
+.content{
+    top: 11vh;
+    min-height: 80vh;
+    height: fit-content;
+    /* justify-content: left; */
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+    /* background-color: rgba(255, 78, 78, 0.5); */
+}
+.content:before{
+    content: "";
+    background: none;
+}
+.content::-webkit-scrollbar{
+    /* display: none; */
+    /* color: violet; */
+    /* width: thin; */
+}
+.content p{
+    margin-top: 1vh;
+    font-family: 'Nunito';
+    font-weight: normal;
+    display: block;
+    font-size: 2.1vh;
+    margin: 2vw;
+}
+.home-articles{
+    position:relative;
+    top: 15vh;
+
+}
+.content div{
+    display: flex;
+    justify-content: space-between;
+}
+.content .blog-detail-name-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content span{
+    margin: 3vh 3vw;
+    font-family: 'Ubuntu';
+    font-size: 2vh;
+}
+.content div img{
+    margin-top: 1vh;
+    border-radius: 5vh;
+    width: 40vw;
+    max-width: 450px;
+}
+.home-articles{
+    margin-bottom: 12vh;
+}
+h1{
+    position: relative;
+    top: 10vh;
+    margin: auto;
+}
+h2{
+    margin: auto;
+    margin-top: 3vh;
+    font-weight:600;
+    margin-bottom: 2vh;
+}
+.home-article{
+    max-width: 700px;
+}
+.Article-Main-Box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.social svg{
+    margin: 1vw;
+}
+hr{
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    top: 15vh;
+}
